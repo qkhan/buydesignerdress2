@@ -164,7 +164,7 @@ border-image:   linear-gradient(to bottom, #86DF7B 50%,#7BAADF 50%) 2;
 
 <ul style="overflow: auto;">
 {% for item in object_list %}
-<li class="items-list" style="margin-left:40px;">
+<li class="items-list" style="margin-left:40px; margin-bottom: 120px;">
 {% if item.thumb_image.url %}
 <a href="{{ item.get_absolute_url }}"><img src="{{ item.thumb_image.url }}" alt="icon" width="50" style="height: 100px; width:70px;"/></a>
 {% endif %}

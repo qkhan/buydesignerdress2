@@ -33,7 +33,7 @@ class LoginRequiredMixin(object):
 class MultipleObjectMixin(object):
     def get_object(self, queryset=None, *args, **kwargs):
         slug = self.kwargs.get("slug")
-        #print("SLUG:", slug)
+        print("SLUG:", slug)
         if slug:
             try:
                 obj = self.model.objects.get(slug=slug)
@@ -109,7 +109,7 @@ class MyView(LoginRequiredMixin, ContextMixin, TemplateResponseMixin, View):
 
 
 class ItemListView(ListView):
-
+    print ("Item List View")
     model = Item
 
     def get_queryset(self, *args, **kwargs):
