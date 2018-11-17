@@ -1,0 +1,10 @@
+ p = Category.objects.get(categoryName = 'Designer dress')
+ >>> categoryID = Category.objects.get(categoryName='Designer dress')
+ >>> categoryID
+ <Category: Designer dress>
+ >>> categoryID.id
+ 1
+ >>> item_list = Item.objects.filter(categoryID=categoryID)
+ >>> item_list
+ <ItemQuerySet [<Item: 2 - Sienna Green Bozena>]>
+ >>>

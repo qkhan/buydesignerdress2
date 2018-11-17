@@ -1,0 +1,9 @@
+
+(buydesignerdress3) vagrant@vagrant-ubuntu-trusty-64:/vagrant/src$ python manage.py dumpdata items > items.json
+(buydesignerdress3) vagrant@vagrant-ubuntu-trusty-64:/vagrant/src$ python manage.py loaddata  items.json
+(buydesignerdress3) vagrant@vagrant-ubuntu-trusty-64:/vagrant/src$ vim items
+(buydesignerdress3) vagrant@vagrant-ubuntu-trusty-64:/vagrant/src$ vim items.json
+(buydesignerdress3) vagrant@vagrant-ubuntu-trusty-64:/vagrant/src$ python manage.py dumpdata > db.json
+(buydesignerdress3) vagrant@vagrant-ubuntu-trusty-64:/vagrant/src$ python manage.py loaddata  db.json
+python manage.py loaddata --exclude auth.permission --exclude contenttypes items.json
+I
